@@ -1,12 +1,7 @@
 #include <stdio.h>
+#include "biblioteca.h"
 
-int soma_entre_1_e_n(int n) {
-    int soma = 0;
-    for (int i = 1; i <= n; i++) {
-        soma += i;
-    }
-    return soma;
-}
+
 
 int main() {
     int n;

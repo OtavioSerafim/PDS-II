@@ -1,14 +1,5 @@
 #include <stdio.h>
-
-int divisivel_por_5_e_11(int n) {
-    if(n % 5 == 0 && n % 11 == 0) {
-        return 0;
-    } 
-    else {
-        return 1;
-    }
-
-}
+#include "biblioteca.h"
 
 int main() {
     int n;

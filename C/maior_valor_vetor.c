@@ -1,17 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
-
-int maior_valor_vetor(int *vetor, int n){
-    int maior = vetor[0];
-    for(int i = 1; i < n; i++){
-        if(vetor[i] > maior){
-            maior = vetor[i];
-        }
-    }
-    return maior;
-}
+#include "biblioteca.h"
 
 int main(){
     int n;
@@ -25,7 +15,12 @@ int main(){
     for(int i = 0; i < n; i++){
         vetor[i] = rand() % 1000 + 1;
     }
-
+    
+    printf("Vetor: ");
+    for(int i = 0; i < n; i++){
+        printf("%d ", vetor[i]);
+    }
+    printf("\n");
     printf("O maior valor do vetor eh: %d\n", maior_valor_vetor(vetor, n));
 
 }

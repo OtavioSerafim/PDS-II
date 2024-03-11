@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "biblioteca.h"
 
 int main() {
@@ -10,5 +11,7 @@ int main() {
     } else {
         printf("%d nao eh divisivel por 5 e 11\n", n);
     }
+    system("pause");
+    
     return 0;
 }

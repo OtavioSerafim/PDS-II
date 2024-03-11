@@ -23,4 +23,7 @@ int main(){
     printf("\n");
     printf("O maior valor do vetor eh: %d\n", maior_valor_vetor(vetor, n));
 
+    system("pause");
+    return 0;
+
 }

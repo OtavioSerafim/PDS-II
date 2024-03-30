@@ -10,7 +10,7 @@ int main() {
     
 
     // Adiciona alguns elementos à pilha
-    for (int i = 0; i < 5000000; i++) {
+    for (int i = 0; i < 5000; i++) {
         int v = rand() % 100;
         pilha_push(p, v);
         printf("Adicionado à pilha: %d\n", v);

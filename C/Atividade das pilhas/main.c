@@ -1,15 +1,24 @@
 #include <stdio.h>
+#include <time.h>
+#include <stdlib.h>
 #include "pilha.h"
 
+
 void main() {
+
+    srand(time(NULL));
+
+
     Pilha* minhaPilha = cria();
 
-    push(5, minhaPilha);
-    push(10, minhaPilha);
-    push(15, minhaPilha);
+    for(int i = 0; i < 10; i++){
+        int n = rand() % 101;
+        push(n, minhaPilha);
 
-    printf("%d\n", pop(minhaPilha)); // Saída: 15
-    printf("%d\n", pop(minhaPilha)); // Saída: 10
-    printf("%d\n", pop(minhaPilha)); // Saída: 5
-    printf("%d\n", pop(minhaPilha)); // A pilha está vazia.
+    }
+    int valor;
+    while ((valor = pop(minhaPilha)) != -1){
+        printf("%d\n", valor);
+    }
+
 }

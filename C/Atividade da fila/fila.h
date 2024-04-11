@@ -6,6 +6,6 @@ typedef struct Fila Fila;
 
 Fila* cria();
 
-void push(int pessoa, Fila* f);
+void inserir(int pessoa, Fila* f);
 
 int pop(Fila* f);

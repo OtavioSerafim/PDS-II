@@ -33,7 +33,7 @@ void push(int pessoa, Fila* f){
 
     f->ultimo = n;
     if(f->primeiro == NULL  ){
-        f->primeiro =n;
+        f->primeiro = n;
     }
 }
 
